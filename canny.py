@@ -20,7 +20,7 @@ def checkWeak(edge,weakEdges,weakIndex):
     
 def canny():
     img = io.imread('original.png')
-    #img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+    #img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)    #convert image to gray if you have color image.
     
     print("Original")
     plt.imshow(img,cmap="gray")
@@ -127,7 +127,7 @@ def canny():
     weakEdges = np.zeros([1,row*col])
     for x in range(0,row):
         for y in range(0,col):
-            #print("x",x)
+            #print("x",x)           #debugging
             #print("y",y)
             #print("strong",strongIndex)
             #print("weak",weakIndex)

@@ -70,6 +70,3 @@ plt.show()
 print("Sobel magnitude")
 plt.imshow(sobelGrad)
 plt.show()
-
-#Normalize output to fit the range 0-255
-            #g *= 255.0 / np.max(g)
